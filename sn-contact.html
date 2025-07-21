@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact - SN-Traiteurs</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="sn-style.css">
+</head>
+<body>
+    <header class="header">
+        <nav class="navbar">
+            <div class="nav-container">
+                <div class="logo">
+                    <i class="fas fa-utensils"></i>
+                    <span>SN-Traiteurs</span>
+                </div>
+                <div class="nav-menu" id="nav-menu">
+                    <ul class="nav-list">
+                        <li><a href="sn-index.html" class="nav-link">Accueil</a></li>
+                        <li><a href="sn-index.html#services" class="nav-link">Services</a></li>
+                        <li><a href="sn-traiteurs.html" class="nav-link">Traiteurs</a></li>
+                        <li><a href="sn-contact.html" class="nav-link active">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="nav-toggle" id="nav-toggle">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="contact-hero">
+            <div class="container">
+                <h1 class="page-title">Contactez-nous</h1>
+                <p class="page-subtitle">Nous sommes là pour répondre à toutes vos questions</p>
+            </div>
+        </section>
+
+        <section class="contact-section">
+            <div class="container">
+                <div class="contact-grid">
+                    <!-- Formulaire de contact -->
+                    <div class="contact-form-container">
+                        <h2>Envoyez-nous un message</h2>
+                        <form id="contact-form" class="contact-form">
+                            <div class="form-row">
+                                <div class="form-group">
+                                    <label for="name">Nom complet *</label>
+                                    <input type="text" id="name" name="name" required>
+                                    <div class="field-error" id="name-error"></div>
+                                </div>
+                                <div class="form-group">
+                                    <label for="email">Email *</label>
+                                    <input type="email" id="email" name="email" required>
+                                    <div class="field-error" id="email-error"></div>
+                                </div>
+                            </div>
+                            
+                            <div class="form-row">
+                                <div class="form-group">
+                                    <label for="phone">Téléphone</label>
+                                    <input type="tel" id="phone" name="phone" placeholder="+221 77 123 45 67">
+                                </div>
+                                <div class="form-group">
+                                    <label for="company">Entreprise</label>
+                                    <input type="text" id="company" name="company" placeholder="Nom de votre entreprise (optionnel)">
+                                </div>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="subject">Sujet *</label>
+                                <select id="subject" name="subject" required>
+                                    <option value="">Sélectionnez un sujet</option>
+                                    <option value="devis">Demande de devis</option>
+                                    <option value="mariage">Organisation de mariage</option>
+                                    <option value="evenement">Événement d'entreprise</option>
+                                    <option value="partenariat">Partenariat traiteur</option>
+                                    <option value="autre">Autre</option>
+                                </select>
+                                <div class="field-error" id="subject-error"></div>
+                            </div>
+
+                            <div class="form-row">
+                                <div class="form-group">
+                                    <label for="event-date">Date de l'événement</label>
+                                    <input type="date" id="event-date" name="event-date">
+                                </div>
+                                <div class="form-group">
+                                    <label for="guest-count">Nombre d'invités</label>
+                                    <input type="number" id="guest-count" name="guest-count" min="1" placeholder="Ex: 50">
+                                </div>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="budget">Budget estimé</label>
+                                <select id="budget" name="budget">
+                                    <option value="">Sélectionnez votre budget</option>
+                                    <option value="moins-100k">Moins de 100 000 FCFA</option>
+                                    <option value="100k-250k">100 000 - 250 000 FCFA</option>
+                                    <option value="250k-500k">250 000 - 500 000 FCFA</option>
+                                    <option value="500k-1m">500 000 FCFA - 1M FCFA</option>
+                                    <option value="plus-1m">Plus de 1M FCFA</option>
+                                </select>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="message">Message *</label>
+                                <textarea id="message" name="message" rows="6" required placeholder="Décrivez votre projet, vos préférences alimentaires, contraintes spéciales..."></textarea>
+                                <div class="field-error" id="message-error"></div>
+                                <div class="char-count">
+                                    <span id="char-counter">0</span>/500 caractères
+                                </div>
+                            </div>
+
+                            <div class="form-group">
+                                <label class="checkbox-label">
+                                    <input type="checkbox" id="newsletter" name="newsletter">
+                                    <span class="checkmark"></span>
+                                    Je souhaite recevoir la newsletter avec les offres spéciales
+                                </label>
+                            </div>
+
+                            <div class="form-group">
+                                <label class="checkbox-label">
+                                    <input type="checkbox" id="terms" name="terms" required>
+                                    <span class="checkmark"></span>
+                                    J'accepte les <a href="#" class="terms-link">conditions d'utilisation</a> *
+                                </label>
+                                <div class="field-error" id="terms-error"></div>
+                            </div>
+
+                            <button type="submit" class="btn btn-primary btn-large">
+                                <i class="fas fa-paper-plane"></i>
+                                Envoyer ma demande
+                            </button>
+                        </form>
+                    </div>
+
+                    <!-- Informations de contact -->
+                    <div class="contact-info-container">
+                        <h2>Nos coordonnées</h2>
+                        <div class="contact-info-grid">
+                            <div class="contact-info-item">
+                                <div class="contact-icon">
+                                    <i class="fas fa-phone"></i>
+                                </div>
+                                <div class="contact-details">
+                                    <h4>Téléphone</h4>
+                                    <p>+221 77 123 45 67</p>
+                                    <p>+221 33 825 67 89</p>
+                                </div>
+                            </div>
+                            <div class="contact-info-item">
+                                <div class="contact-icon">
+                                    <i class="fas fa-envelope"></i>
+                                </div>
+                                <div class="contact-details">
+                                    <h4>Email</h4>
+                                    <p>contact@sn-traiteurs.sn</p>
+                                    <p>info@sn-traiteurs.sn</p>
+                                </div>
+                            </div>
+                            <div class="contact-info-item">
+                                <div class="contact-icon">
+                                    <i class="fas fa-map-marker-alt"></i>
+                                </div>
+                                <div class="contact-details">
+                                    <h4>Adresse</h4>
+                                    <p>Avenue Cheikh Anta Diop</p>
+                                    <p>Dakar, Sénégal</p>
+                                </div>
+                            </div>
+                            <div class="contact-info-item">
+                                <div class="contact-icon">
+                                    <i class="fas fa-clock"></i>
+                                </div>
+                                <div class="contact-details">
+                                    <h4>Horaires</h4>
+                                    <p>Lun - Ven: 8h00 - 18h00</p>
+                                    <p>Sam: 9h00 - 16h00</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Carte de localisation -->
+                        <div class="map-container">
+                            <h3>Notre localisation</h3>
+                            <div class="map-placeholder">
+                                <img src="https://images.unsplash.com/photo-1524661135-423995f22d0b?w=400&h=250&fit=crop" alt="Carte de Dakar" class="map-image">
+                                <div class="map-overlay">
+                                    <i class="fas fa-map-marker-alt"></i>
+                                    <p>Dakar, Sénégal</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section FAQ rapide -->
+        <section class="faq-section">
+            <div class="container">
+                <h2 class="section-title">Questions fréquentes</h2>
+                <div class="faq-grid">
+                    <div class="faq-item">
+                        <h4><i class="fas fa-question-circle"></i> Combien de temps à l'avance réserver ?</h4>
+                        <p>Nous recommandons de réserver au moins 2 semaines à l'avance pour les petits événements et 1 mois pour les mariages.</p>
+                    </div>
+                    <div class="faq-item">
+                        <h4><i class="fas fa-question-circle"></i> Livrez-vous dans toute la région ?</h4>
+                        <p>Oui, nous livrons dans toute la région de Dakar et ses environs. Des frais de livraison peuvent s'appliquer.</p>
+                    </div>
+                    <div class="faq-item">
+                        <h4><i class="fas fa-question-circle"></i> Proposez-vous des menus personnalisés ?</h4>
+                        <p>Absolument ! Nos traiteurs peuvent adapter leurs menus selon vos préférences et restrictions alimentaires.</p>
+                    </div>
+                    <div class="faq-item">
+                        <h4><i class="fas fa-question-circle"></i> Comment obtenir un devis ?</h4>
+                        <p>Utilisez le formulaire ci-dessus en sélectionnant "Demande de devis" ou contactez-nous directement par téléphone.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <div class="logo">
+                        <i class="fas fa-utensils"></i>
+                        <span>SN-Traiteurs</span>
+                    </div>
+                    <p>Votre partenaire de confiance pour tous vos événements culinaires au Sénégal.</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-whatsapp"></i></a>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h4>Navigation</h4>
+                    <ul>
+                        <li><a href="sn-index.html">Accueil</a></li>
+                        <li><a href="sn-index.html#services">Services</a></li>
+                        <li><a href="sn-traiteurs.html">Traiteurs</a></li>
+                        <li><a href="sn-contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Contact</h4>
+                    <div class="contact-info">
+                        <p><i class="fas fa-phone"></i> +221 77 123 45 67</p>
+                        <p><i class="fas fa-envelope"></i> contact@sn-traiteurs.sn</p>
+                        <p><i class="fas fa-map-marker-alt"></i> Dakar, Sénégal</p>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 SN-Traiteurs. Tous droits réservés.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Popup de confirmation -->
+    <div id="success-popup" class="popup" style="display: none;">
+        <div class="popup-content">
+            <div class="popup-icon">
+                <i class="fas fa-check-circle"></i>
+            </div>
+            <h3>Message envoyé !</h3>
+            <p>Merci pour votre message. Nous vous répondrons dans les plus brefs délais.</p>
+            <button class="btn btn-primary" onclick="closePopup()">Fermer</button>
+        </div>
+    </div>
+
+    <script src="sn-script.js"></script>
+</body>
+</html>

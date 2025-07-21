@@ -1,0 +1,383 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SN-Traiteurs - Des saveurs d'exception</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="sn-style.css">
+</head>
+<body>
+    <header class="header">
+        <nav class="navbar">
+            <div class="nav-container">
+                <div class="logo">
+                    <i class="fas fa-utensils"></i>
+                    <span>SN-Traiteurs</span>
+                </div>
+                <div class="nav-menu" id="nav-menu">
+                    <ul class="nav-list">
+                        <li><a href="#accueil" class="nav-link active">Accueil</a></li>
+                        <li><a href="#services" class="nav-link">Services</a></li>
+                        <li><a href="sn-traiteurs.html" class="nav-link">Traiteurs</a></li>
+                        <li><a href="sn-contact.html" class="nav-link">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="nav-toggle" id="nav-toggle">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Bannière principale avec slider -->
+        <section id="accueil" class="hero">
+            <div class="hero-slider">
+                <div class="slide active" data-bg="https://images.unsplash.com/photo-1414235077428-338989a2e8c0?w=1920&h=1080&fit=crop">
+                    <div class="hero-content">
+                        <h1 class="hero-title">Des saveurs d'exception, des traiteurs de confiance</h1>
+                        <p class="hero-subtitle">Découvrez les meilleurs traiteurs du Sénégal pour vos événements inoubliables</p>
+                        <div class="hero-buttons">
+                            <a href="sn-traiteurs.html" class="btn btn-primary">Voir les Traiteurs</a>
+                            <a href="#services" class="btn btn-secondary">Nos Services</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="slide" data-bg="https://images.unsplash.com/photo-1556909114-f6e7ad7d3136?w=1920&h=1080&fit=crop">
+                    <div class="hero-content">
+                        <h1 class="hero-title">Mariages d'exception au Sénégal</h1>
+                        <p class="hero-subtitle">Des menus traditionnels et modernes pour votre jour J</p>
+                        <div class="hero-buttons">
+                            <a href="sn-traiteurs.html?filter=mariage" class="btn btn-primary">Traiteurs Mariage</a>
+                            <a href="#services" class="btn btn-secondary">En savoir plus</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="slide" data-bg="https://images.unsplash.com/photo-1504674900247-0877df9cc836?w=1920&h=1080&fit=crop">
+                    <div class="hero-content">
+                        <h1 class="hero-title">Événements d'entreprise</h1>
+                        <p class="hero-subtitle">Solutions professionnelles pour tous vos événements corporate</p>
+                        <div class="hero-buttons">
+                            <a href="sn-contact.html?subject=evenement" class="btn btn-primary">Demander un devis</a>
+                            <a href="#services" class="btn btn-secondary">Nos Services</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="hero-controls">
+                <button class="hero-prev"><i class="fas fa-chevron-left"></i></button>
+                <div class="hero-dots">
+                    <span class="dot active" data-slide="0"></span>
+                    <span class="dot" data-slide="1"></span>
+                    <span class="dot" data-slide="2"></span>
+                </div>
+                <button class="hero-next"><i class="fas fa-chevron-right"></i></button>
+            </div>
+            <div class="hero-overlay"></div>
+        </section>
+
+        <!-- Section statistiques -->
+        <section class="stats-section">
+            <div class="container">
+                <div class="stats-grid">
+                    <div class="stat-item" data-aos="fade-up">
+                        <div class="stat-icon">
+                            <i class="fas fa-users"></i>
+                        </div>
+                        <div class="stat-number" data-target="150">0</div>
+                        <div class="stat-label">Traiteurs Partenaires</div>
+                    </div>
+                    <div class="stat-item" data-aos="fade-up" data-aos-delay="100">
+                        <div class="stat-icon">
+                            <i class="fas fa-heart"></i>
+                        </div>
+                        <div class="stat-number" data-target="2500">0</div>
+                        <div class="stat-label">Événements Réussis</div>
+                    </div>
+                    <div class="stat-item" data-aos="fade-up" data-aos-delay="200">
+                        <div class="stat-icon">
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <div class="stat-number" data-target="98">0</div>
+                        <div class="stat-label">% Satisfaction Client</div>
+                    </div>
+                    <div class="stat-item" data-aos="fade-up" data-aos-delay="300">
+                        <div class="stat-icon">
+                            <i class="fas fa-clock"></i>
+                        </div>
+                        <div class="stat-number" data-target="24">0</div>
+                        <div class="stat-label">Heures Disponibles</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section Services -->
+        <section id="services" class="services">
+            <div class="container">
+                <h2 class="section-title">Nos Services</h2>
+                <p class="section-subtitle">Des solutions adaptées à tous vos besoins culinaires</p>
+                <div class="services-grid">
+                    <div class="service-card" data-aos="fade-up">
+                        <div class="service-icon">
+                            <i class="fas fa-birthday-cake"></i>
+                        </div>
+                        <h3>Mariages</h3>
+                        <p>Des repas de mariage exceptionnels avec des menus personnalisés selon vos traditions.</p>
+                    </div>
+                    <div class="service-card" data-aos="fade-up" data-aos-delay="100">
+                        <div class="service-icon">
+                            <i class="fas fa-glass-cheers"></i>
+                        </div>
+                        <h3>Événements</h3>
+                        <p>Baptêmes, anniversaires, conférences - nous couvrons tous vos événements spéciaux.</p>
+                    </div>
+                    <div class="service-card" data-aos="fade-up" data-aos-delay="200">
+                        <div class="service-icon">
+                            <i class="fas fa-utensils"></i>
+                        </div>
+                        <h3>Buffets</h3>
+                        <p>Buffets variés avec des plats traditionnels sénégalais et internationaux.</p>
+                    </div>
+                    <div class="service-card" data-aos="fade-up" data-aos-delay="300">
+                        <div class="service-icon">
+                            <i class="fas fa-truck"></i>
+                        </div>
+                        <h3>Livraison</h3>
+                        <p>Service de livraison rapide dans toute la région de Dakar et ses environs.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section Traiteurs Populaires -->
+        <section class="popular-caterers">
+            <div class="container">
+                <h2 class="section-title">Traiteurs Populaires</h2>
+                <p class="section-subtitle">Découvrez nos partenaires les plus appréciés</p>
+                <div class="caterers-grid">
+                    <div class="caterer-card" data-aos="zoom-in">
+                        <div class="caterer-image">
+                            <img src="https://images.unsplash.com/photo-1556909114-f6e7ad7d3136?w=400&h=300&fit=crop" alt="Chez Fatou">
+                            <div class="rating">
+                                <i class="fas fa-star"></i>
+                                <span>4.8</span>
+                            </div>
+                        </div>
+                        <div class="caterer-info">
+                            <h3>Chez Fatou</h3>
+                            <p class="specialty">Spécialité: Cuisine traditionnelle</p>
+                            <p class="location"><i class="fas fa-map-marker-alt"></i> Plateau, Dakar</p>
+                            <button class="btn btn-primary btn-small">Commander</button>
+                        </div>
+                    </div>
+                    <div class="caterer-card" data-aos="zoom-in" data-aos-delay="100">
+                        <div class="caterer-image">
+                            <img src="https://images.unsplash.com/photo-1504674900247-0877df9cc836?w=400&h=300&fit=crop" alt="Délices d'Afrique">
+                            <div class="rating">
+                                <i class="fas fa-star"></i>
+                                <span>4.9</span>
+                            </div>
+                        </div>
+                        <div class="caterer-info">
+                            <h3>Délices d'Afrique</h3>
+                            <p class="specialty">Spécialité: Fusion moderne</p>
+                            <p class="location"><i class="fas fa-map-marker-alt"></i> Almadies, Dakar</p>
+                            <button class="btn btn-primary btn-small">Commander</button>
+                        </div>
+                    </div>
+                    <div class="caterer-card" data-aos="zoom-in" data-aos-delay="200">
+                        <div class="caterer-image">
+                            <img src="https://images.unsplash.com/photo-1565299624946-b28f40a0ca4b?w=400&h=300&fit=crop" alt="Saveurs du Terroir">
+                            <div class="rating">
+                                <i class="fas fa-star"></i>
+                                <span>4.7</span>
+                            </div>
+                        </div>
+                        <div class="caterer-info">
+                            <h3>Saveurs du Terroir</h3>
+                            <p class="specialty">Spécialité: Grillades & BBQ</p>
+                            <p class="location"><i class="fas fa-map-marker-alt"></i> Parcelles, Dakar</p>
+                            <button class="btn btn-primary btn-small">Commander</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="text-center">
+                    <a href="sn-traiteurs.html" class="btn btn-outline">Voir tous les traiteurs</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section témoignages -->
+        <section class="testimonials-section">
+            <div class="container">
+                <h2 class="section-title">Témoignages Clients</h2>
+                <p class="section-subtitle">Ce que disent nos clients satisfaits</p>
+                <div class="testimonials-slider">
+                    <div class="testimonial-track">
+                        <div class="testimonial-card active">
+                            <div class="testimonial-content">
+                                <div class="quote-icon">
+                                    <i class="fas fa-quote-left"></i>
+                                </div>
+                                <p>"Service exceptionnel pour notre mariage ! L'équipe de Chez Fatou a dépassé toutes nos attentes avec des plats délicieux et un service impeccable."</p>
+                                <div class="testimonial-author">
+                                    <img src="https://images.unsplash.com/photo-1494790108755-2616b612b2c1?w=80&h=80&fit=crop&crop=face" alt="Aminata Diallo">
+                                    <div class="author-info">
+                                        <h4>Aminata Diallo</h4>
+                                        <span>Mariage à Dakar</span>
+                                        <div class="rating">
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="testimonial-card">
+                            <div class="testimonial-content">
+                                <div class="quote-icon">
+                                    <i class="fas fa-quote-left"></i>
+                                </div>
+                                <p>"Délices d'Afrique a transformé notre événement d'entreprise en un véritable succès. Cuisine moderne et présentation parfaite !"</p>
+                                <div class="testimonial-author">
+                                    <img src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=80&h=80&fit=crop&crop=face" alt="Moussa Sarr">
+                                    <div class="author-info">
+                                        <h4>Moussa Sarr</h4>
+                                        <span>Directeur Marketing</span>
+                                        <div class="rating">
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="testimonial-card">
+                            <div class="testimonial-content">
+                                <div class="quote-icon">
+                                    <i class="fas fa-quote-left"></i>
+                                </div>
+                                <p>"Un service de livraison ultra-rapide et des plats toujours frais. SN-Traiteurs est devenu notre partenaire de confiance."</p>
+                                <div class="testimonial-author">
+                                    <img src="https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=80&h=80&fit=crop&crop=face" alt="Fatou Ndiaye">
+                                    <div class="author-info">
+                                        <h4>Fatou Ndiaye</h4>
+                                        <span>Organisatrice d'événements</span>
+                                        <div class="rating">
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="testimonial-controls">
+                        <button class="testimonial-prev"><i class="fas fa-chevron-left"></i></button>
+                        <div class="testimonial-dots">
+                            <span class="dot active" data-slide="0"></span>
+                            <span class="dot" data-slide="1"></span>
+                            <span class="dot" data-slide="2"></span>
+                        </div>
+                        <button class="testimonial-next"><i class="fas fa-chevron-right"></i></button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section CTA -->
+        <section class="cta-section">
+            <div class="container">
+                <div class="cta-content">
+                    <h2>Prêt à organiser votre événement ?</h2>
+                    <p>Contactez-nous dès maintenant pour un devis personnalisé et gratuit</p>
+                    <div class="cta-buttons">
+                        <a href="sn-contact.html" class="btn btn-primary">Demander un devis</a>
+                        <a href="tel:+221771234567" class="btn btn-secondary">
+                            <i class="fas fa-phone"></i>
+                            Appeler maintenant
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section newsletter -->
+        <section class="newsletter-section">
+            <div class="container">
+                <div class="newsletter-content">
+                    <div class="newsletter-text">
+                        <h3>Restez informé de nos actualités</h3>
+                        <p>Recevez nos dernières offres et conseils culinaires</p>
+                    </div>
+                    <form class="newsletter-form" id="newsletter-form">
+                        <div class="newsletter-input">
+                            <input type="email" placeholder="Votre adresse email" required>
+                            <button type="submit" class="btn btn-primary">
+                                <i class="fas fa-paper-plane"></i>
+                                S'abonner
+                            </button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <div class="logo">
+                        <i class="fas fa-utensils"></i>
+                        <span>SN-Traiteurs</span>
+                    </div>
+                    <p>Votre partenaire de confiance pour tous vos événements culinaires au Sénégal.</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-whatsapp"></i></a>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h4>Navigation</h4>
+                    <ul>
+                        <li><a href="#accueil">Accueil</a></li>
+                        <li><a href="#services">Services</a></li>
+                        <li><a href="sn-traiteurs.html">Traiteurs</a></li>
+                        <li><a href="sn-contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Contact</h4>
+                    <div class="contact-info">
+                        <p><i class="fas fa-phone"></i> +221 77 621 64 99</p>
+                        <p><i class="fas fa-envelope"></i> contact@sn-traiteurs.sn</p>
+                        <p><i class="fas fa-map-marker-alt"></i> Dakar, Sénégal</p>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 SN-Traiteurs. Tous droits réservés.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="sn-script.js"></script>
+</body>
+</html>

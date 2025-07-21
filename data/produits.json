@@ -1,0 +1,152 @@
+[
+  {
+    "id": 1,
+    "name": "Panier Artisanal Traditionnel",
+    "price": 35,
+    "category": "artisanat",
+    "vendor": "Artisan Mamadou",
+    "image": "https://pixabay.com/get/gbb597c745c93291a6a1f74dd7ddd7a31d94c204449053392d51a072b220b012b8128e402dfeef930f6af0ea5389d6da121c36d460b21d66a54550724ba27e050_1280.jpg",
+    "description": "Panier traditionnel tissé à la main par des artisans locaux. Parfait pour le marché ou la décoration intérieure. Matériaux naturels et durables.",
+    "featured": true
+  },
+  {
+    "id": 2,
+    "name": "Épices du Marché",
+    "price": 15,
+    "category": "alimentation",
+    "vendor": "Coopérative des Épices",
+    "image": "https://pixabay.com/get/g19a90690303c5216367d5690e55f34055f0e45dc9c0dab3733bd81349dc7c93526e7c6bf6828a456ae6afc2301e82c77f160406ef33c717cceef55f0848c3d07_1280.jpg",
+    "description": "Mélange d'épices authentiques du marché local. Saveurs traditionnelles pour vos plats africains. Produit bio et équitable.",
+    "featured": true
+  },
+  {
+    "id": 3,
+    "name": "Textile Coloré Bogolan",
+    "price": 65,
+    "category": "textile",
+    "vendor": "Atelier Textile Khadija",
+    "image": "https://pixabay.com/get/gd013c0aab393bf8f146c39c75fb5187209a23352c25c6448020dd9ef73149122c3c8f8afa2a91a7fe1e938ab1657b2fc448632e223548ee1d51905d97f616e98_1280.jpg",
+    "description": "Tissu bogolan traditionnel aux motifs géométriques. Teinture naturelle à base de boue fermentée. Technique ancestrale du Mali.",
+    "featured": false
+  },
+  {
+    "id": 4,
+    "name": "Bijoux en Perles Traditionnelles",
+    "price": 25,
+    "category": "bijoux",
+    "vendor": "Bijouterie Fatou",
+    "image": "https://pixabay.com/get/g4c07197f1b4eef18085c6fd2258331219676241bd360a247849ec6e79f08d8b62a0a7d8408d9dd0d6aa73a739e98ab676d6033036f75b89f91fb4a7bdcf920ef_1280.jpg",
+    "description": "Collier en perles traditionnelles africaines. Fait main avec des matériaux naturels. Chaque pièce est unique et authentique.",
+    "featured": true
+  },
+  {
+    "id": 5,
+    "name": "Sculpture Décorative en Bois",
+    "price": 45,
+    "category": "decoration",
+    "vendor": "Sculpteur Ousmane",
+    "image": "https://pixabay.com/get/gf723469fee323f263b591169e49db4b13a1d89d2ab28130e6850422ff1926d4363380dcb8f909a7ee1210d501d7bf194217a3c56f8659697f2dbb5b5e9edbe6a_1280.jpg",
+    "description": "Sculpture en bois sculptée à la main représentant un masque traditionnel. Art africain authentique pour votre décoration.",
+    "featured": false
+  },
+  {
+    "id": 6,
+    "name": "Poterie Artisanale",
+    "price": 30,
+    "category": "artisanat",
+    "vendor": "Potier Amadou",
+    "image": "https://pixabay.com/get/g0657d2f6cf5a28cdb31d03378b9bb7a8496169e8be6ae84a8fdff35f71bb3e051221deb0afcb02c21985f08c77ffd1a0_1280.jpg",
+    "description": "Vase en terre cuite fait selon les techniques ancestrales. Décoration unique avec motifs géométriques traditionnels.",
+    "featured": true
+  },
+  {
+    "id": 7,
+    "name": "Fruits Tropicaux Frais",
+    "price": 12,
+    "category": "alimentation",
+    "vendor": "Marché Central Dakar",
+    "image": "https://pixabay.com/get/g0c3ea55984b14d344e595c58d2fcad054513674ee92c8543ac9aea016ffd986a63378430a13defab6e0fcf688a8a43e9ca325437c5a29e7d3f31cdc59726037a_1280.jpg",
+    "description": "Sélection de fruits tropicaux frais du marché local. Mangues, papayes et autres délices. Fraîcheur garantie.",
+    "featured": false
+  },
+  {
+    "id": 8,
+    "name": "Djembé Traditionnel",
+    "price": 85,
+    "category": "artisanat",
+    "vendor": "Musicien Ibrahima",
+    "image": "https://pixabay.com/get/ge12a0f83617964f09133a58b950111eff3df5b5637ecbe7da9d91129e9dd8acfd1c649b19e488f2f2276ba59670ce8adde4077417e9a70ef9aeea4b6a821a22c_1280.jpg",
+    "description": "Djembé traditionnel fait main. Son authentique pour vos célébrations et événements musicaux. Peau de chèvre naturelle.",
+    "featured": true
+  },
+  {
+    "id": 9,
+    "name": "Masque Cérémoniel",
+    "price": 120,
+    "category": "decoration",
+    "vendor": "Art Traditionnel Kofi",
+    "image": "https://pixabay.com/get/gdc41e098462c96a1e580017f9afed0048019feb47bb530f06fca48bacbb04cf4692077379d65307e8f14ef823dbc7645880b4762eaf0f273dbca27083fc30e41_1280.jpg",
+    "description": "Masque cérémoniel authentique sculpté dans le bois d'ébène. Pièce d'art africain traditionnelle pour collection.",
+    "featured": false
+  },
+  {
+    "id": 10,
+    "name": "Instruments à Percussion",
+    "price": 55,
+    "category": "artisanat",
+    "vendor": "Atelier Musique Amadou",
+    "image": "https://pixabay.com/get/g82e8c969bb336e75f9665021e7b80ef2525a16fac618d0a1044fc3eb8da5e48d29ec50b14fa586180da5c474c02d577d8740d22510fbc54d23fda15a72ecea47_1280.jpg",
+    "description": "Set d'instruments de percussion traditionnels. Balafon, calebasses et shakers pour la musique africaine.",
+    "featured": true
+  },
+  {
+    "id": 11,
+    "name": "Vannerie Décorative",
+    "price": 28,
+    "category": "decoration",
+    "vendor": "Vannier Seydou",
+    "image": "https://pixabay.com/get/g8e325a566e2fab53b1585a86a1f0983d54264cff653eb3eb599cb89eaa2de21daf330ee80375d373d3930428c5107440b6abd20334e82ef435a854d1aeebfb0d_1280.jpg",
+    "description": "Corbeille décorative en fibres naturelles. Motifs colorés et design contemporain inspiré de l'art traditionnel.",
+    "featured": false
+  },
+  {
+    "id": 12,
+    "name": "Condiments Locaux",
+    "price": 18,
+    "category": "alimentation",
+    "vendor": "Coopérative Féminine",
+    "image": "https://pixabay.com/get/g29f50a9a5ea7947940287b8c789e217079680bd954449b24fad13461c93f995e5fbc4f77bbd8298aae8773a9b5f83cf9121af21a30c9cfe2ed5908f3fb1cb0fe_1280.jpg",
+    "description": "Assortiment de condiments et sauces locales. Saveurs authentiques pour la cuisine africaine traditionnelle.",
+    "featured": true
+  },
+  {
+    "id": 13,
+    "name": "Sac à Main Traditionnel",
+    "price": 42,
+    "category": "textile",
+    "vendor": "Maroquinerie Aminata",
+    "image": "https://pixabay.com/get/g06b05242542d6f4a95559a527052c01d88967dd45430da6f35eb803fce571e179554ef2654d6710768ebdc99fa0541343526b5e5eb8f5228d8bcc88a8d8b0c17_1280.jpg",
+    "description": "Sac à main en cuir traditionnel avec motifs brodés. Accessoire élégant alliant tradition et modernité.",
+    "featured": false
+  },
+  {
+    "id": 14,
+    "name": "Bracelet en Cuivre",
+    "price": 35,
+    "category": "bijoux",
+    "vendor": "Forge Traditionnelle",
+    "image": "https://pixabay.com/get/g1ed7735ef4c0f837ef137a76429cb3548e049a365156fdb8268665d4e916aee329965ab0e21cfd716da7d41978f0d7ffa695055725f7f3c4585b4a779af0181d_1280.jpg",
+    "description": "Bracelet en cuivre martelé selon les techniques ancestrales. Bijou traditionnel aux vertus thérapeutiques.",
+    "featured": true
+  },
+  {
+    "id": 15,
+    "name": "Statuette Spirituelle",
+    "price": 75,
+    "category": "decoration",
+    "vendor": "Art Sacré Bakary",
+    "image": "https://pixabay.com/get/g4c07197f1b4eef18085c6fd2258331219676241bd360a247849ec6e79f08d8b62a0a7d8408d9dd0d6aa73a739e98ab676d6033036f75b89f91fb4a7bdcf920ef_1280.jpg",
+    "description": "Statuette spirituelle sculptée dans le bois sacré. Représentation des ancêtres selon la tradition africaine.",
+    "featured": false
+  }
+]

@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Traiteurs - SN-Traiteurs</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="sn-style.css">
+</head>
+<body>
+    <header class="header">
+        <nav class="navbar">
+            <div class="nav-container">
+                <div class="logo">
+                    <i class="fas fa-utensils"></i>
+                    <span>SN-Traiteurs</span>
+                </div>
+                <div class="nav-menu" id="nav-menu">
+                    <ul class="nav-list">
+                        <li><a href="sn-index.html" class="nav-link">Accueil</a></li>
+                        <li><a href="sn-index.html#services" class="nav-link">Services</a></li>
+                        <li><a href="sn-traiteurs.html" class="nav-link active">Traiteurs</a></li>
+                        <li><a href="sn-contact.html" class="nav-link">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="nav-toggle" id="nav-toggle">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Section filtres -->
+        <section class="filters-section">
+            <div class="container">
+                <h1 class="page-title">Nos Traiteurs Partenaires</h1>
+                <p class="page-subtitle">Trouvez le traiteur parfait pour votre événement</p>
+                
+                <div class="advanced-filters">
+                    <div class="search-bar">
+                        <div class="search-input-group">
+                            <i class="fas fa-search"></i>
+                            <input type="text" id="search-input" placeholder="Rechercher un traiteur, une spécialité...">
+                            <button type="button" id="search-btn" class="btn btn-primary btn-small">Rechercher</button>
+                        </div>
+                    </div>
+                    
+                    <div class="filters-row">
+                        <div class="filter-group">
+                            <label for="specialty-filter">Spécialité:</label>
+                            <select id="specialty-filter" class="filter-select">
+                                <option value="">Toutes les spécialités</option>
+                                <option value="traditionnelle">Cuisine traditionnelle</option>
+                                <option value="moderne">Fusion moderne</option>
+                                <option value="grillades">Grillades & BBQ</option>
+                                <option value="patisserie">Pâtisserie</option>
+                                <option value="internationale">Cuisine internationale</option>
+                            </select>
+                        </div>
+                        <div class="filter-group">
+                            <label for="city-filter">Ville:</label>
+                            <select id="city-filter" class="filter-select">
+                                <option value="">Toutes les villes</option>
+                                <option value="dakar">Dakar</option>
+                                <option value="thies">Thiès</option>
+                                <option value="saint-louis">Saint-Louis</option>
+                                <option value="kaolack">Kaolack</option>
+                            </select>
+                        </div>
+                        <div class="filter-group">
+                            <label for="rating-filter">Note minimum:</label>
+                            <select id="rating-filter" class="filter-select">
+                                <option value="">Toutes les notes</option>
+                                <option value="4.5">4.5+ étoiles</option>
+                                <option value="4.0">4.0+ étoiles</option>
+                                <option value="3.5">3.5+ étoiles</option>
+                            </select>
+                        </div>
+                        <div class="filter-group">
+                            <label for="sort-filter">Trier par:</label>
+                            <select id="sort-filter" class="filter-select">
+                                <option value="rating">Note (décroissant)</option>
+                                <option value="name">Nom (A-Z)</option>
+                                <option value="city">Ville</option>
+                                <option value="specialty">Spécialité</option>
+                            </select>
+                        </div>
+                        <button id="clear-filters" class="btn btn-outline btn-small">
+                            <i class="fas fa-times"></i> Effacer
+                        </button>
+                    </div>
+
+                    <div class="view-options">
+                        <span class="view-label">Vue:</span>
+                        <button class="view-btn active" data-view="grid" title="Vue grille">
+                            <i class="fas fa-th"></i>
+                        </button>
+                        <button class="view-btn" data-view="list" title="Vue liste">
+                            <i class="fas fa-list"></i>
+                        </button>
+                        <span class="results-count">
+                            <span id="results-number">0</span> traiteur(s) trouvé(s)
+                        </span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section liste des traiteurs -->
+        <section class="caterers-listing">
+            <div class="container">
+                <div class="caterers-grid" id="caterers-grid">
+                    <!-- Les cartes de traiteurs seront générées par JavaScript -->
+                </div>
+                <div id="no-results" class="no-results" style="display: none;">
+                    <i class="fas fa-search"></i>
+                    <h3>Aucun traiteur trouvé</h3>
+                    <p>Essayez de modifier vos critères de recherche.</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <div class="logo">
+                        <i class="fas fa-utensils"></i>
+                        <span>SN-Traiteurs</span>
+                    </div>
+                    <p>Votre partenaire de confiance pour tous vos événements culinaires au Sénégal.</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-whatsapp"></i></a>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h4>Navigation</h4>
+                    <ul>
+                        <li><a href="sn-index.html">Accueil</a></li>
+                        <li><a href="sn-index.html#services">Services</a></li>
+                        <li><a href="sn-traiteurs.html">Traiteurs</a></li>
+                        <li><a href="sn-contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Contact</h4>
+                    <div class="contact-info">
+                        <p><i class="fas fa-phone"></i> +221 77 123 45 67</p>
+                        <p><i class="fas fa-envelope"></i> contact@sn-traiteurs.sn</p>
+                        <p><i class="fas fa-map-marker-alt"></i> Dakar, Sénégal</p>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 SN-Traiteurs. Tous droits réservés.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="sn-script.js"></script>
+</body>
+</html>

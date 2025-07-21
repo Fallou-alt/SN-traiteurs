@@ -1,0 +1,64 @@
+📘 Cahier des charges – Frontend PETERSENBAZZAR (HTML, CSS, JS)
+
+1. 🎯 Objectif
+
+Développer l’interface utilisateur de la plateforme e-commerce PETERSENBAZZAR (sans logique de base de données) pour présenter un prototype fonctionnel visuel qui simule un vrai site.
+
+2. 🧩 Pages à développer
+
+📄 1. Page d’accueil (index.html)
+Header avec logo + barre de navigation
+Bannière ou slider d’accueil
+Section « catégories populaires »
+Section « produits en vedette »
+Pied de page (footer) avec liens (contact, mentions, réseaux sociaux)
+🛍 2. Page catalogue produits
+Grille de produits (image, nom, prix, bouton "Voir" ou "Ajouter au panier")
+Filtres : catégorie, prix, recherche par mot-clé
+Responsive design (mobile + desktop)
+📦 3. Page fiche produit
+Image du produit
+Nom, prix, description, vendeur
+Bouton “Ajouter au panier”
+Lien retour au catalogue
+🛒 4. Page panier
+Liste des produits ajoutés
+Quantité + bouton supprimer
+Total + bouton “Valider la commande”
+👤 5. Pages utilisateurs
+Page de connexion
+Page d’inscription
+(Tu peux simuler la validation avec du JavaScript)
+3. 🛠 Fonctionnalités à développer avec JavaScript
+
+Fonction	Description
+Barre de recherche	Filtrer les produits par mot-clé
+Filtres dynamiques	Afficher par catégorie ou fourchette de prix
+Panier dynamique	Ajouter/supprimer des produits avec stockage local (localStorage)
+Slider d’accueil	Automatique ou avec boutons
+Formulaires utilisateurs	Simuler une inscription/connexion avec alertes
+4. 🎨 Design & style (CSS)
+
+Responsive (mobile-first avec media queries)
+Couleurs chaudes inspirées des marchés locaux (ex : rouge, orange, beige)
+Typographie claire et lisible
+Utilisation de Flexbox / Grid pour les mises en page
+Animation légère (hover, transitions)
+✅ Tu peux utiliser Google Fonts + Font Awesome pour les icônes
+5. 🗂 Organisation des fichiers
+
+petersenbazzar/
+├── index.html
+├── catalogue.html
+├── produit.html
+├── panier.html
+├── login.html
+├── register.html
+├── css/
+│   └── style.css
+├── js/
+│   └── script.js
+├── images/
+│   └── produits/, bannières/, icônes/
+└── data/
+    └── produits.json (facultatif pour simuler les données)
